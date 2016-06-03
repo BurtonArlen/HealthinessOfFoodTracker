@@ -7,7 +7,6 @@ import {Meal} from './meal.model';
 })
 export class HealthPipe implements PipeTransform {
   transform(input: Meal[], args) {
-    console.log('selected meal: ', args[1]);
     var healthState = args[0];
     if(healthState === "healthy") {
       return input.filter((meal) => {

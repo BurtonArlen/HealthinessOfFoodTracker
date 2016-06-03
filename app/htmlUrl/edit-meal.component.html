@@ -1,6 +1,8 @@
 <div class="editMeal">
-  <h3>Edit Meal Input: </h3>
-  <input [(ngModel)]="meal.description" class="input-lg meal-form"/>
-  <input [(ngModel)]="meal.information" class="input-lg meal-form"/>
-  <input [(ngModel)]="meal.calorie" class="input-lg meal-form"/>
+  <div class="mealInfoStyle editMealStyle">
+    <h3>Edit Food Name | Edit Food Info | Edit Calorie Count</h3>
+  </div>
+  <input [(ngModel)]="meal.description" class="input-lg meal-form userIn editForm leftInput"/>
+  <input [(ngModel)]="meal.information" class="input-lg meal-form userIn editForm"/>
+  <input [(ngModel)]="meal.calorie" class="input-lg meal-form userIn editForm rightInput"/>
 </div>

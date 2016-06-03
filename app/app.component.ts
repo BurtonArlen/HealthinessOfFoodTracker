@@ -12,13 +12,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal("Garbage", "I ate 5 servings", 0, "9001"),
-      new Meal("A Goldfish", "I ate 79 servings", 1, "4"),
-      new Meal("Soylent Green", "I ate 2 servings", 2, "300"),
-      new Meal("The Blood of my Enemies", "I ate 503 servings", 3, "9001")
+      new Meal("Salad", "With ranch dressing", 0, "350"),
+      new Meal("Celery", "I ate 4 servings", 1, "5"),
+      new Meal("Chicken Wrap", "No cheese", 2, "300"),
+      new Meal("The Blood of my Enemies", "Was delicious", 3, "210")
     ];
-  }
-  mealWasSelected(clickedMeal: Meal): void {
-    console.log('parent', clickedMeal);
   }
 }

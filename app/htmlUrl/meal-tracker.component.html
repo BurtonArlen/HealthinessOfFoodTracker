@@ -7,7 +7,9 @@
   <option value="unHealthy">Show Healthy</option>
 </select>
 
-<edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal-details>
+<div class="display">  
+  <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal-details>
+</div>
 
 <div class="display">
   <meal-display *ngFor="#currentMeal of mealList | health:filterHealth"

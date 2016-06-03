@@ -23,7 +23,6 @@ export class MealTrackerComponent {
     this.onMealSelect = new EventEmitter();
   }
   mealClicked(clickedMeal: Meal): void {
-    console.log('child', clickedMeal);
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
@@ -33,6 +32,5 @@ export class MealTrackerComponent {
   }
   onChange(filterOption) {
   this.filterHealth = filterOption;
-  console.log(this.filterHealth);
   }
 }
