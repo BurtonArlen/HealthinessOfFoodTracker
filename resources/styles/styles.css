@@ -1,0 +1,92 @@
+.add-button{
+  margin-top: 2px;
+  height: 190px;
+  background-color: #22bdf0;
+  border-color: #22bdf0;
+  color: #eee;
+  border-radius: 10px 100px 100px 10px;
+}
+
+.jumbotron{
+  margin-top: 15px;
+  width: 599px!important;
+  text-align: center;
+  border-radius: 60px 10px 60px 60px!important;
+  border-width: 6px;
+  border-color: #22bdf0;
+  border-style: double;
+  margin-left: 10%;
+  margin-right: 40%;
+}
+
+.newMeal{
+  width: 792px;
+  margin-top: -8px;
+  margin-left: 10%;
+  margin-right: 40%;
+}
+
+.userIn{
+  margin-top: 2px;
+  margin-right: 2px;
+  border-color: #22bdf0;
+  border-style: groove;
+  border-width: 3px;
+  font-style: italic;
+  line-height: 46px;
+  padding: 7px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+.topInput{
+  border-radius: 100px 10px 10px 10px;
+  padding-left: 12px;
+}
+
+input:focus{
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+select:focus{
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.add-button:focus{
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.healthSelect{
+  width: 527.98px;
+  height: 46px;
+  margin-top: -46px;
+  margin-left: 10%;
+  margin-right: 50%;
+  background-color: #fff;
+  color: #22bdf0;
+}
+
+.bottomInput{
+  border-radius: 10px 10px 10px 100px!important;
+}
+
+.userIn::-moz-placeholder{
+  color: #22bdf0;
+}
+
+.userIn:-ms-input-placeholder{
+  color: #22bdf0;
+}
+
+.userIn::-webkit-input-placeholder{
+  color: #22bdf0;
+}
