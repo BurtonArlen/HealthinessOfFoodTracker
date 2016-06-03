@@ -1,5 +1,5 @@
 <div class="mealDisplay">
-  <h3>Meal: {{ meal.description }}</h3>
-  <h3>Info: {{ meal.information }}</h3>
-  <p>Calories: {{ meal.calorie }}</p>
+  <p>{{ meal.id + 1 }}. <span class="dataType">Meal:</span> <span class="mealInfoStyle">{{ meal.description }}</span></p>
+  <p><span class="dataType">Info:</span> <span class="mealInfoStyle">{{ meal.information }}</span></p>
+  <p><span class="dataType">Calories:</span><span class="calories"> {{ meal.calorie }}</span></p>
 </div>

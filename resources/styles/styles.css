@@ -1,29 +1,37 @@
+body{
+  background-color: #7ad7f6;
+}
+
 .add-button{
   margin-top: 2px;
   height: 190px;
   background-color: #22bdf0;
   border-color: #22bdf0;
-  color: #eee;
+  color: #fff;
   border-radius: 10px 100px 100px 10px;
 }
 
 .jumbotron{
   margin-top: 15px;
-  width: 599px!important;
+  min-height: 190px;
+  min-width: 599px!important;
   text-align: center;
-  border-radius: 60px 10px 60px 60px!important;
+  border-radius: 70px 10px 70px 50px!important;
   border-width: 6px;
   border-color: #22bdf0;
   border-style: double;
   margin-left: 10%;
-  margin-right: 40%;
+  margin-right: 10%;
+  font-family: 'Julius Sans One', sans-serif;
+  word-spacing: 20px;
 }
 
 .newMeal{
-  width: 792px;
+  min-width: 792px;
+  width: 110%;
   margin-top: -8px;
   margin-left: 10%;
-  margin-right: 40%;
+  margin-right: 10%;
 }
 
 .userIn{
@@ -37,11 +45,12 @@
   padding: 7px;
   font-size: 18px;
   line-height: 1.3333333;
+  background-color: #eee;
 }
 
 .topInput{
   border-radius: 100px 10px 10px 10px;
-  padding-left: 12px;
+  padding-left: 16px;
 }
 
 input:focus{
@@ -66,12 +75,13 @@ select:focus{
 }
 
 .healthSelect{
-  width: 527.98px;
+  width: 73.29%;
+  min-width: 527.98px;
   height: 46px;
   margin-top: -46px;
   margin-left: 10%;
   margin-right: 50%;
-  background-color: #fff;
+  background-color: #eee;
   color: #22bdf0;
 }
 
@@ -89,4 +99,39 @@ select:focus{
 
 .userIn::-webkit-input-placeholder{
   color: #22bdf0;
+}
+
+.mealDisplay{
+  width: auto;
+  max-width: 230px;
+  float: left;
+  padding: 20px;
+  padding-bottom: -10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 45px 10px 45px 10px!important;
+  border-width: 6px;
+  border-color: #22bdf0;
+  border-style: double;
+}
+
+.display{
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.calories{
+  color: red;
+}
+
+.dataType{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mealInfoStyle{
+  font-family: 'Julius Sans One', sans-serif;
 }

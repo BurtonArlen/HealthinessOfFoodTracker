@@ -9,8 +9,10 @@
 
 <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal-details>
 
-<meal-display *ngFor="#currentMeal of mealList | health:filterHealth"
-  (click)="mealClicked(currentMeal)"
-  [class.selected]="currentMeal === selectedMeal"
-  [meal]="currentMeal">
-</meal-display>
+<div class="display">
+  <meal-display *ngFor="#currentMeal of mealList | health:filterHealth"
+    (click)="mealClicked(currentMeal)"
+    [class.selected]="currentMeal === selectedMeal"
+    [meal]="currentMeal">
+  </meal-display>
+</div>
