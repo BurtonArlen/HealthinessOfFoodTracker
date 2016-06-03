@@ -18,7 +18,7 @@ export class MealTrackerComponent {
   public mealList: Meal[];
   public onMealSelect: EventEmitter<Meal>;
   public selectedMeal: Meal;
-  public filterDone: string = "notHealthy";
+  public filterHealth: string = "all";
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
@@ -32,7 +32,7 @@ export class MealTrackerComponent {
     this.mealList.push(meal);
   }
   onChange(filterOption) {
-  this.filterDone = filterOption;
-  console.log(this.filterDone);
+  this.filterHealth = filterOption;
+  console.log(this.filterHealth);
   }
 }

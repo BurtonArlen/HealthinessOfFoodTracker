@@ -8,7 +8,7 @@ import { Meal } from './meal.model';
 })
 export class MealComponent {
   public meal: Meal;
-  toggleDone(setState: boolean){
+  toggleHealthy(setState: boolean){
     this.meal.healthy = setState;
   }
 }

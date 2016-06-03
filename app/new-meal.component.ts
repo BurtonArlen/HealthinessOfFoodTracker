@@ -16,7 +16,7 @@ export class NewMealComponent {
 
     var newMeal = new Meal(userDescription.value, 0, calorieCount.value);
     this.onSubmitNewMeal.emit(newMeal);
-    calorieCount.value = "0";
+    calorieCount.value = "";
     userDescription.value = "";
   }
 }

@@ -11,11 +11,11 @@ export class HealthPipe implements PipeTransform {
     var healthState = args[0];
     if(healthState === "healthy") {
       return input.filter((meal) => {
-        return meal.health;
+        return meal.healthy;
       });
     } else if (healthState === "unHealthy") {
       return input.filter((meal) => {
-        return !meal.health;
+        return !meal.healthy;
       });
     } else {
       return input;
