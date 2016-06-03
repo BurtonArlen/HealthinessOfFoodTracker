@@ -1,4 +1,4 @@
-# Project: Git User Repo
+# Project: TrackDaMeals
 
 #### _A website where a user can input and track the "healthyness" of each of their meals, version 0.0.1, current as of 6.03.2016._
 
@@ -10,10 +10,10 @@ The second code review for Epicodus' JavaScript class: A website where a user ca
 
 ## Requirements
 
-Install Node Package Manager.
-Install Bower.
-Install Ruby.
-Run 'npm install', 'bower install', 'gulp', to show the page that will be located at "localhost:3000"
+####Install Node Package Manager.
+####Install Bower.
+####Install Ruby.
+####Run 'npm install', 'bower install', 'gulp', to show the page that will be located at "localhost:3000"
 
 ## Known Bugs
 
