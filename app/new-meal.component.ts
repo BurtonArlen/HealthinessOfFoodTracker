@@ -11,11 +11,10 @@ export class NewMealComponent {
   constructor(){
     this.onSubmitNewMeal = new EventEmitter();
   }
-  addMeal(userDescription: HTMLInputElement, calorieCount: HTMLSelectElement){
-    // debugger;
-
-    var newMeal = new Meal(userDescription.value, 0, calorieCount.value);
+  addMeal(userDescription: HTMLInputElement, userInfo: HTMLInputElement, calorieCount: HTMLSelectElement){
+    var newMeal = new Meal(userDescription.value, userInfo.value, 0, calorieCount.value);
     this.onSubmitNewMeal.emit(newMeal);
+    userInfo.value = "";
     calorieCount.value = "";
     userDescription.value = "";
   }

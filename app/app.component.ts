@@ -12,10 +12,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal("Garbage", 0, "9001"),
-      new Meal("A Goldfish", 1, "4"),
-      new Meal("Soylent Green", 2, "300"),
-      new Meal("The Blood of my Enemies", 3, "9001")
+      new Meal("Garbage", "I ate 5 servings", 0, "9001"),
+      new Meal("A Goldfish", "I ate 79 servings", 1, "4"),
+      new Meal("Soylent Green", "I ate 2 servings", 2, "300"),
+      new Meal("The Blood of my Enemies", "I ate 503 servings", 3, "9001")
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
