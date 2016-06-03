@@ -12,7 +12,7 @@ import {HealthPipe} from './health.pipe';
   pipes: [HealthPipe],
   outputs: ['onMealSelect'],
   directives: [MealComponent, EditMeal, NewMealComponent],
-  templateUrl: 'app/meal-tracker.component.html'
+  templateUrl: 'app/htmlUrl/meal-tracker.component.html'
 })
 export class MealTrackerComponent {
   public mealList: Meal[];

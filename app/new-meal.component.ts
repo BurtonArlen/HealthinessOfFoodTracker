@@ -4,29 +4,19 @@ import {Meal} from './meal.model';
 @Component({
   selector: 'new-meal',
   outputs: ['onSubmitNewMeal'],
-  template: `
-  <div class="meal-form">
-  <select name="priority" class="filter" #setPriority>
-    <option value="low">Low</option>
-    <option value="medium">Medium</option>
-    <option value="high" selected="selected">High</option>
-  </select>
-    <input placeholder="Description" class="col-sm-8 input-lg" #newDescription>
-    <button (click)="addMeal(newDescription, setPriority)" class="btn-success btn-lg add-button">Add</button>
-  </div>
-  `
+  templateUrl: 'app/htmlUrl/new-meal.component.html'
 })
 export class NewMealComponent {
   public onSubmitNewMeal: EventEmitter<Meal>;
   constructor(){
     this.onSubmitNewMeal = new EventEmitter();
   }
-  addMeal(userDescription: HTMLInputElement, mealPriority: HTMLSelectElement){
+  addMeal(userDescription: HTMLInputElement, calorieCount: HTMLSelectElement){
     // debugger;
 
-    var newMeal = new Meal(userDescription.value, 0, mealPriority.value);
+    var newMeal = new Meal(userDescription.value, 0, calorieCount.value);
     this.onSubmitNewMeal.emit(newMeal);
-    mealPriority.value = "normal";
+    calorieCount.value = "0";
     userDescription.value = "";
   }
 }

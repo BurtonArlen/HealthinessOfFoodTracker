@@ -1,0 +1,15 @@
+<select (change)="onChange($event.target.value)" class="filter">
+  <option value="all" selected="selected">Show All</option>
+  <option value="health">Show Unhealthy</option>
+  <option value="notHealthy">Show Healthy</option>
+</select>
+
+<new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
+
+<edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal-details>
+
+<meal-display *ngFor="#currentMeal of mealList | health:filterDone"
+  (click)="mealClicked(currentMeal)"
+  [class.selected]="currentMeal === selectedMeal"
+  [meal]="currentMeal">
+</meal-display>

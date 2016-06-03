@@ -4,17 +4,11 @@ import { Meal } from './meal.model';
 @Component({
     selector: 'meal-display',
     inputs: ['meal'],
-  template: `
-  <div>
-    <input *ngIf="meal.health" type="checkbox" checked (click)="toggleDone(false)"/>
-    <input *ngIf="!meal.health" type="checkbox" (click)="toggleDone(true)"/>
-    <label>{{ meal.description }}</label>
-  </div>
-  `
+    templateUrl: 'app/htmlUrl/meal.component.html'
 })
 export class MealComponent {
   public meal: Meal;
   toggleDone(setState: boolean){
-    this.meal.health = setState;
+    this.meal.healthy = setState;
   }
 }
